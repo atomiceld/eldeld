@@ -1,4 +1,5 @@
 # function2.py
+from getopt import gnu_getopt
 from re import X
 
 
@@ -42,3 +43,18 @@ lst=[1,2,3]
 print(id(lst))
 lst.append(4)
 print(id(lst))
+
+g=1
+def testscope(a):
+    global g
+    g=2
+    return g+a
+testscope(1)
+print("함수호출후 g:{0}".format(g))
+
+def times(a=10,b=20):
+    return a*b
+
+print(times())
+print(times(5))
+print(times(5,6))
