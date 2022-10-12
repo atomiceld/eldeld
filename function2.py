@@ -32,6 +32,13 @@ def change(x):
     x1=x[:]
     x1[0]="H"
     print("함수내부:{0}".format(x1))
-    
+
 change(wordlist)    
 print("함수 호출후 :{0}".format(wordlist))
+
+a=1.2
+print(id(a))
+lst=[1,2,3]
+print(id(lst))
+lst.append(4)
+print(id(lst))
