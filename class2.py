@@ -11,6 +11,6 @@ class Person:
 p1=Person()
 p2=Person()
 p3=Person()
-p4=Person()
+
 
 print("인스턴스 갯수:{0}".format(Person.num_person))
