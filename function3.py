@@ -1,4 +1,7 @@
 # function3.py
+from tkinter import Y
+
+
 def connectURI(server,port):
     strURL="http://"+ server + ":" +port
     return strURL
@@ -25,3 +28,10 @@ def userURIBuilder(server,port,**user):
 print(userURIBuilder("naver","80",id="kim",passwd="1234"))
 print(userURIBuilder("naver","80",id="kim",passwd="1234",
     name="mike",age="30"))
+
+g=lambda x,y:x*y
+print(g(3,4))
+print(g(5,6))
+print( (lambda a:a*a)(3)) 
+print(globals())
+
