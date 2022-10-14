@@ -6,7 +6,7 @@ def divide(a,b):
 
 
 try:
-    result = divide(5,0)
+    result = divide(5,"aaa")
 except ZeroDivisionError:
     print("0으로 나누면 안됩니다.")
 except TypeError:
